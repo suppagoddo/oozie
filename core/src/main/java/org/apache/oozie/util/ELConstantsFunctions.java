@@ -114,7 +114,8 @@ public class ELConstantsFunctions {
             if (replacement == null) {
                 replacement = "";
             }
-            return src.replaceAll(regex, replacement);
+	    src = src.replaceAll(regex, replacement);
+            return src;
         }
         return src;
     }
